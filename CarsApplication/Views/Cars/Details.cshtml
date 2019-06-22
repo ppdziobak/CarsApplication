@@ -1,0 +1,60 @@
+﻿@model CarsApplication.Models.Car
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Marka)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Marka)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataProdukcji)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataProdukcji)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Silnik)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Silnik)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RodzajPaliwa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RodzajPaliwa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Przebieg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Przebieg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cena)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cena)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edytuj</a> |
+    <a asp-action="Index">Powrót do listy pojazdów</a>
+</div>
